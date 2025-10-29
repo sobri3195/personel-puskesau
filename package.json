@@ -1,0 +1,18 @@
+{
+  "name": "tni-au-health-dashboard",
+  "version": "1.0.0",
+  "description": "Health Data Management System for Indonesian Air Force (TNI AU)",
+  "scripts": {
+    "client": "cd client && npm run dev",
+    "server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install",
+    "build": "cd client && npm run build"
+  },
+  "keywords": ["tni-au", "health", "dashboard", "military"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
